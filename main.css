@@ -1,0 +1,156 @@
+.borderDiv{
+  width: 600px;
+  /* float: left; */
+}
+
+.flex-container{
+  /* display: flex; */
+  /* position: relative; */
+  width: 600px;
+  height: 450px;
+}
+
+/* img{
+    height: fit-content;
+    width: 147%;
+} */
+
+
+ img {
+  height: fit-content;
+  width: 100%;
+  /* filter: brightness(50%);  */
+}
+.top-overlay {
+	z-index:4;
+  top: 0px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    height: 66px;
+  visibility: visible;
+  /* margin-right: 9px;
+  margin-left: 9px; */
+}
+
+.bottom-overlay {
+	z-index:4;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  height: 146px;
+  visibility: visible;
+  /* margin-right: 9px;
+  margin-left: 9px; */
+}
+
+.right-overlay {
+  z-index:4;
+  right: 0px;
+    position: absolute;
+    top: 66px;
+    width: 217px;
+    height: 238px;
+  /* right: 0px;
+  position: absolute;
+  top: 66px;
+  width: 1129px;
+  height: 238px; */
+  visibility: visible;
+  /* margin-right: 9px; */
+}
+
+.left-overlay {
+  left: 0px;
+  position: absolute;
+  top: 66px;
+  width: 66px;
+  height: 238px;
+  /* margin-left: 9px;
+  z-index:4;
+  left: 0px;
+	width:57px;
+	height:238px;
+  top:66px;
+  visibility: visible;
+  position:absolute; */
+	/* right:0px; */
+	/* margin-top:-212px;
+	margin-right:-160px; */
+}
+
+.dg-crop-shadow{
+  background-color:#229;
+	opacity:0.35;
+}
+
+button{
+    text-align: center;
+    padding: 10;
+    font-size: 15px;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+
+.buttonDiv{
+    left: auto;
+    margin-left: 47%;
+    margin-top: 20;
+    margin-bottom: 20;
+}
+
+.item{
+  left: 66px;
+  top: 66px;
+  width: 317px;
+  height: 238px;
+  position: absolute;
+  outline: 2px dashed rgba(0,0,0);
+  cursor: pointer;
+  z-index: 1005;
+}
+
+.movableDiv{
+  position: absolute;
+    height: 100%;
+    cursor: move;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background-color: white;
+}
+
+.resizer{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: black;
+  z-index: 2;
+}
+
+.resizer.nw{
+  top: -1px;
+  left: -1px;
+  cursor: nw-resize;
+}
+.resizer.ne{
+  top: -1px;
+  right: -1px;
+  cursor: ne-resize;
+}
+
+.resizer.sw{
+  bottom: -1px;
+  left: -1px;
+  cursor: sw-resize;
+}
+
+.resizer.se{
+  bottom: -1px;
+  right: -1px;
+  cursor: se-resize;
+}
+
+

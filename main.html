@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href="./main.css"/>
+        <!-- <script type="text/javascript" src="js/external/mootools.js"></script>
+        <script type="text/javascript" src="js/effects/effect-element.js"></script>
+        <script type="text/javascript" src="js/effects/movable.js"></script>
+        <script type="text/javascript" src="js/effects/resizable.js"></script>
+        <script type="text/javascript" src="js/dg-crop.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script> -->
+    </head>
+  
+      <body>
+          <div>
+            <div class="borderDiv">
+                <div class="flex-container">
+                    <img src="./nature.jpg" alt="image" />
+                    <!-- <div class="top-overlay dg-crop-shadow"></div>
+                    <div class="bottom-overlay dg-crop-shadow"></div>
+                    <div class="left-overlay dg-crop-shadow"></div>
+                    <div class="right-overlay dg-crop-shadow"></div> -->
+                    <div class='item'>
+                        <div class="movableDiv"></div>
+                        <div class='resizer top-left nw'></div>
+                        <div class='resizer top-right ne'></div>
+                        <div class='resizer bottom-left sw'></div>
+                        <div class='resizer bottom-right se'></div>
+                    </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="buttonDiv">
+            <button>crop</button>
+            <button>download</button>
+            <canvas id="panel" width="779" height="519"></canvas>
+                <div id="results">
+                    <h2>Please make selection for cropping and click 'Crop' button.</h2>
+                    <img id="crop_result" /> 
+                </div>
+        </div>
+       
+        
+        
+        <script src = "main.js"></script>
+      </body>
+</html>
+
+
+<!--
+      $('.js-crop').on('click', crop);
+      crop = function(){
+    //Find the part of the image that is inside the crop box
+    var crop_canvas,
+        left = $('.overlay').offset().left- $container.offset().left,
+        top =  $('.overlay').offset().top - $container.offset().top,
+        width = $('.overlay').width(),
+        height = $('.overlay').height();
+		
+    crop_canvas = document.createElement('canvas');
+	
+    crop_canvas.width = width;
+    crop_canvas.height = height;
+	
+    crop_canvas.getContext('2d').drawImage(image_target, left, top, width, height, 0, 0, width, height);
+	var dataURL=crop_canvas.toDataURL("image/png");
+	image_target.src=dataURL;
+	orig_src.src=image_target.src;
+	
+	
+	$(image_target).bind("load",function() {
+		$(this).css({
+			width:width,
+			height:height
+		}).unbind('load').parent().css({
+			top:$('.overlay').offset().top- $('.crop-wrapper').offset().top,
+			left:$('.overlay').offset().left- $('.crop-wrapper').offset().left
+		})
+	});
+    //window.open(crop_canvas.toDataURL("image/png"));
+  }
+
+  init();
+};
+-->
